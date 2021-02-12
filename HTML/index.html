@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
+    <title>Reservia</title>
+    <script src="https://kit.fontawesome.com/82aca8790a.js" crossorigin="anonymous"></script>
+
     <style>
         * {
            font-family: raleway, sans-serif;
@@ -18,22 +21,22 @@
            margin: 0 auto;
        }
 
-       .wrap {
-           max-width:1440px;
-           margin: 0 auto;
-       }
-
        .reservialogo {
-       }
+           max-height: 20px;
+       }<!--SIZE RESTRAINT NOT WORKING-->
 
        .navigation {
            max-width: 1440px;
-           margin: 0 auto;
            text-align: right;
        }
        
        .navbar {
            padding: 10px;
+       }
+
+       .wrap {
+           max-width: 1440px;
+           margin: 0 auto;
        }
 
        .search-button {
@@ -76,42 +79,137 @@
             padding: 30px;
         }
 
+        #aone {
+            width: 200px;
+            height: 250px;
+        }
+
+        #atwo {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        #athree {
+            width: 200px;
+            height: 125px;
+            object-fit: cover;
+        }
+        #afour {
+            width: 200px;
+            height: 125px;
+            object-fit: cover;
+        }
+
+        #afive {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        #asix {
+            width: 200px;
+            height: 125px;
+            object-fit: cover;
+        }
+
+        #aseven {
+            width: 200px;
+            height: 125px;
+            object-fit: cover;
+        }
+
         .mostpopular {
             display: flex;
             flex-direction: column;
             padding: 30px;
         }
-        
-        .activities {
-            display: grid;
-            grid-template: repeat(2, 1fr)/ repeat(4, 1fr);  
-            grid-gap: 20px;
-            border-radius: 10px;
+
+        #bone {
+            width: 200px;
+            height: 125px;
         }
 
-        #activitiesimage1 {
-            grid-column: 1/2;
-            grid-row: 1/3;
+        #btwo {
+
+            width: 200px;
+            height: 125px;
+            object-fit: cover;
         }
-        #activitiesimage2 {
-            grid-column: 2/3;
-            grid-row: 1/2; 
+
+        #bthree {
+            width: 200px;
+            height: 125px;
+            object-fit: cover;
         }
-        #activitiesimage3 {
-            grid-column: 2/3;
-            grid-row: 2/3;
+        #bfour {
+            width: 200px;
+            height: 125px;
+            object-fit: cover;
         }
-        #activitiesimage4 {
-            grid-column: 3/4;
-            grid-row: 1/3;
+
+        .activities {
+            max-width: 1440px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: yellow;
+            display: grid;
+            grid-template-rows: 0.5fr 1.25fr 1.25fr;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            
         }
-        #activitiesimage5 {
-            grid-column: 4/5;
-            grid-row: 1/2;
+
+        #cone {
+            grid-column: 1 / 5;
+            grid-row: 1 / 2;
         }
-        #activitiesimage6 {
-            grid-column: 4/5;
-            grid-row: 2/3;
+
+        #ctwo {
+            grid-column: 1 / 2;
+            grid-row: 2 / 4;
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        #cthree {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            width: 200px;
+            height: 125px;
+            object-fit: cover;
+        }
+        #cfour {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            width: 200px;
+            height: 125px;
+            object-fit: cover;
+        }
+
+        #cfive {
+            grid-column: 3 / 4;
+            grid-row: 2 / 4; 
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        #csix {
+            grid-column: 4 / 5;
+            grid-row: 2 / 3;
+            width: 200px;
+            height: 125px;
+            object-fit: cover;
+        }
+
+        #cseven {
+            grid-column: 4 / 5;
+            grid-row: 3 / 4;
+            width: 200px;
+            height: 125px;
+            object-fit: cover;
         }
 
         footer {
@@ -124,8 +222,7 @@
 
    </style>
 
-    <title>Reservia</title>
-    <script src="https://kit.fontawesome.com/82aca8790a.js" crossorigin="anonymous"></script>
+
     
 
 </head>
@@ -143,7 +240,7 @@
     <a href="index.html" class="reservialogo">
         <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\logo\Reservia@3x.png" 
         title="Reservia Logo" alt="blue Reservia Logo">
-    </a><!--RESERVIA LOGO NOT CHANGING SIZE CHECK CSS AND MAKE INLINE WITH NAVBAR-->
+    </a><!--RESERVIA LOGO NOT CHANGING SIZE CHECK CSS-->
 </nav>
   
 
@@ -176,42 +273,70 @@
         <div class="container">
             <div class="accommodations">
                 <h4>Accommodation in Marseille</h4>
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere" class="accimage">
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port" class="accimage>
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel" class="accimage>
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer" class="accimage>
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" class="accimage>
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel Chez Amina" class="accimage>
-                <br>
+                <div id="atwo">
+                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere">
+                </div>
+
+                <div id="athree">
+                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
+                </div>
+
+                <div id="afour">
+                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel">
+                </div>
+
+                <div id="afive">
+                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer">
+                </div>
+
+                <div id="asix">
+                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+                </div>
+
+                <div id="aseven">
+                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel Chez Amina">
+                </div>
+
+                br>
+
                 <p><a href=".index.html"> Show more</a></p>
             </div>
     
             <div class="mostpopular">
                 <h4>Most Popular <i class="fas fa-chart-line"></i></h4>
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel" class="popularimage">
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au couer de l'eau Bed and Breakfast" class="popularimage">
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Tout bleu et Blanc Hotel" class="popularimage">
+                <div id="btwo">
+                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel">
+                </div>
+            
+                <div id="bthree">
+                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au couer de l'eau Bed and Breakfast">
+                </div>
+
+                <div id="bfour">
+                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Tout bleu et Blanc Hotel">
+                </div>
+
             </div>
         </div>
 
         <div class="activities">
             <h4>Activities in Marseille</h4>
-            <div id="activitiesimage5">
+            <div id="csix">
                 <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la=Garde">
             </div>
-            <div id="activitiesimage3">
+            <div id="cfour">
                 <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island">
             </div>
-            <div id="activitiesimage4">
+            <div id="cfive">
                 <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park">
             </div>
-            <div id="activitiesimage6">
+            <div id="cseven">
                 <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park">
             </div> 
-            <div id="activitiesimage2">
+            <div id="cthree">
                 <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort">
             </div>
-            <div id="activitiesimage1">
+            <div id="ctwo">
                 <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port">
             </div>
         </div>
@@ -226,7 +351,7 @@
     <ul style= "list-style: none;">
         <li><a href="<!--Insert Link-->">Site Map</a></li>
         <li><a href="<!--Insert Link-->">General Terms and Conditions</a></li>
-        <li><a href="<!--Insert Link-->">Data and Privacy</a></li>
+        <li><a href="<!---Insert Link-->">Data and Privacy</a></li>
     </ul>
 
     <p>Our Accommodations</p>
