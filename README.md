@@ -13,7 +13,7 @@ This is "Project 2: Turn Mock-Ups into a Web Page" for the OpenClassrooms' Web D
 |Date|Description|
 |----|-----------|
 |02-05-2021| Created GitHub Repository and README.md file|
-|          | Created index.html files.  Added raleway font, images, CSS, HTML, and vscode folder.|
+|02-12-2021| Created index.html files.  Added raleway font, images, CSS, HTML, and vscode folders|
 |02-12-2021| index.html files has all text and all images coded in html but need to work on CSS and debug HTML|
 |02-12-2021| updated "Change Log" table|
 |02-12-2021| fixed "Change Log" table|
