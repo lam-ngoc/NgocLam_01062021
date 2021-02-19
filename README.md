@@ -21,4 +21,4 @@ This is "Project 2: Turn Mock-Ups into a Web Page" for the OpenClassrooms' Web D
 |02-12-2021| fixed "Change Log" table|
 |02-12-2021| fixed "Change Log" table|
 |02-12-2021| fixed "Change Log" table|
-
+|02-12-2021| changed "activities" CSS Grid, failed to constrain image size|
