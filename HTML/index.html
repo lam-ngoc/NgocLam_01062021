@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 
@@ -11,309 +11,308 @@
     <script src="https://kit.fontawesome.com/82aca8790a.js" crossorigin="anonymous"></script>
 
     <style>
-        * {
+        body {
            font-family: raleway, sans-serif;
-           font-weight: bold;
-       }
-
-       head {
+           font-size: 18px;
            max-width: 1440px;
-           margin: 0 auto;
-       }
+           margin: 10px auto;
+        }
 
-       .reservialogo {
-           max-height: 20px;
-       }<!--SIZE RESTRAINT NOT WORKING-->
+        nav {
+            max-width: 1440px;
+            min-height: 20px;
+            max-height: 50px;
+        }
 
-       .navigation {
-           max-width: 1440px;
-           text-align: right;
-       }
-       
-       .navbar {
-           padding: 10px;
-       }
+        h4 {
+            font-weight: bolder;
+        }
 
-       .wrap {
-           max-width: 1440px;
-           margin: 0 auto;
-       }
+        h5 {
+            font-weight: lighter;
+        }
+        .reservialogo {
+           max-height: 20px;<!--LOGO NOT CONSTRAINING INTERNALLY, ONLY CONTRAINING INLINE-->
+        }
 
+        .navigation {
+            display: flex;
+            padding: 10px 20px 10px 20px;
+            text-align: justify;
+        }
+
+        .navigation, .navbar {
+            font-size: 16px;
+            font-weight:bolder;
+            color: #0065FC;
+            padding: 10px 40px 10px 40px;
+            text-decoration: none;
+            text-align: justify; 
+        }
+
+        .navbar:hover {
+            color:black;
+            background-color:#f2f2f2
+        }
+
+        .wrap {
+            margin: 10px; 
+        }
        .search-button {
            background: #0065FC;
            color: white;
-           font: raleway;
+           font-family: raleway;
            font-weight: bold;
-           border-top-right-radius: 20%;
-           border-bottom-right-radius: 20%;
-           padding: 8px;
+           border: solid;
+           font-size: 14px; 
+           padding: 12px; 
+           padding-right: 20px; 
+           padding-left: 20px; 
+           border-top-right-radius: 15px; 
+           border-bottom-right-radius: 15pt;
         }
 
        .form-field {
-           padding: 8px;
            border-color: #f2f2f2;
            border-width: 2px;
-        } <!--BORDER COLOR NOT CHANGING-->
+           border-style: solid;
+           font-size: 14px;
+           font-weight:bolder; 
+           color:black; 
+           padding: 15px;
+        }
 
        .fa-map-marker-alt {
-                font-size:100px;
-                color:#f2f2f2;
-        } <!---ICON COLOR NOT WORKING-->
+                color:black;
+        }
 
-        .filter-bar {
+        .filters {
             font-family: raleway, sans-serif;
-            color:#0065FC;
+            font-size: 10pt;
+        }
+
+        .icon-background {
+            color:#DEEBFF;
         }
 
         .container {
             background-color:#f2f2f2;
+            max-width:1440px;
+            max-height: 600px;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
+            grid-template-columns: 3fr 1fr;
             border-radius: 10px;
+            margin: 10px auto;
         }
+
+        figure {
+            width: 200px;
+            margin: 0 0;
+            background-color: white;
+            border: 7px solid white;
+            border-radius: 15px;
+        }
+
+        figcaption {
+            text-align: left;
+            font-size: 9pt;
+            margin-left: 10px;
+        }
+
+        img{
+            max-width:200px;
+            height: auto;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            object-fit: cover;
+        }
+
         .accommodations {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            padding: 30px;
+            padding-left: 20px;
         }
-
-        #aone {
-            width: 200px;
-            height: 250px;
-        }
-
-        #atwo {
-            width: 200px;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        #athree {
-            width: 200px;
-            height: 125px;
-            object-fit: cover;
-        }
-        #afour {
-            width: 200px;
-            height: 125px;
-            object-fit: cover;
-        }
-
-        #afive {
-            width: 200px;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        #asix {
-            width: 200px;
-            height: 125px;
-            object-fit: cover;
-        }
-
-        #aseven {
-            width: 200px;
-            height: 125px;
-            object-fit: cover;
+        
+        .accthumbs {
+            display: flex;
+            margin: auto;
+            width: 800px;
+            justify-content:space-around;
+            flex-wrap: wrap;
         }
 
         .mostpopular {
             display: flex;
             flex-direction: column;
-            padding: 30px;
         }
 
-        #bone {
-            width: 200px;
-            height: 125px;
-        }
-
-        #btwo {
-
-            width: 200px;
-            height: 125px;
-            object-fit: cover;
-        }
-
-        #bthree {
-            width: 200px;
-            height: 125px;
-            object-fit: cover;
-        }
-        #bfour {
-            width: 200px;
-            height: 125px;
-            object-fit: cover;
+        .popthumbs {
+            display: flex;
+            margin: auto;
+            width: 300px;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .activities {
             max-width: 1440px;
             height: 500px;
-            margin: 0 auto;
-            background-color: yellow;
+            background-color: white;
             display: grid;
             grid-template-rows: 0.5fr 1.25fr 1.25fr;
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 10px;
-            
         }
 
-        #cone {
-            grid-column: 1 / 5;
-            grid-row: 1 / 2;
+        .actthumbs {
+            display: flex;
+            margin: auto;
+            width: 1400px;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
 
-        #ctwo {
-            grid-column: 1 / 2;
-            grid-row: 2 / 4;
-            width: 200px;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        #cthree {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            width: 200px;
-            height: 125px;
-            object-fit: cover;
-        }
-        #cfour {
-            grid-column: 2 / 3;
-            grid-row: 3 / 4;
-            width: 200px;
-            height: 125px;
-            object-fit: cover;
-        }
-
-        #cfive {
-            grid-column: 3 / 4;
-            grid-row: 2 / 4; 
-            width: 200px;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        #csix {
-            grid-column: 4 / 5;
-            grid-row: 2 / 3;
-            width: 200px;
-            height: 125px;
-            object-fit: cover;
-        }
-
-        #cseven {
-            grid-column: 4 / 5;
-            grid-row: 3 / 4;
-            width: 200px;
-            height: 125px;
-            object-fit: cover;
-        }
-
-        footer {
+        .footer {
             max-width: 1440px;
-            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
             background-color: #f2f2f2;
-            padding:30px;
+            padding:30px;  
+            text-decoration: none;
         }
-
-
-   </style>
+     
+    </style>
 
 
     
 
 </head>
 
-
-<nav>
+<nav style="min-height: 90px;">
     <div class="navigation">
+        <a href="index.html" class="reservialogo">
+            <img src="../images/logo/Reservia@3x.png"
+            title="Reservia Logo" alt="blue Reservia Logo" style="max-height:50px; align-items: stretch;">
+        </a><!--RESERVIA LOGO ONLY CHANGING SIZE INLINE BUT NOT INTERNALLY IN CSS<STYLE>-->
         <p>
-            <a href="<!--Insert Link-->" class="navbar">Accommodations</a>
-            <a href="<!--Insert Link-->" class="navbar">Activities</a>
-            <a href="<!--Insert Link-->" class="navbar">Sign Up</a>
+            <a href="index.html" class="navbar">Accommodations</a>
+            <a href="index.html" class="navbar">Activities</a>
+            <a href="index.html" class="navbar">Sign Up</a>
         </p> 
     </div>
-
-    <a href="index.html" class="reservialogo">
-        <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\logo\Reservia@3x.png" 
-        title="Reservia Logo" alt="blue Reservia Logo">
-    </a><!--RESERVIA LOGO NOT CHANGING SIZE CHECK CSS-->
 </nav>
-  
 
 <body>
     <div class="wrap">
-        <h4>Find a place for your dream vacation</h4>
-        <h6>Downtown or in nature</h6>
+        <p style="font-weight: bolder; line-height: 18px;">Find a place for your dream vacation</p>
+        <p style="font-size: 12pt; line-height: 18px;">Downtown or in nature</p>
         
-        <form action="<!--Insert Link-->"></form><i class="fas fa-map-marker-alt" style="font-size:20px; color:black"></i>
-            <input type="text" class="form-field"  placeholder="City, Country">
+        <form action="<!--Insert Link-->"></form>
+        <i class="fas fa-map-marker-alt"></i>
+            <!---<span class="fa-stack fa-1.5x">
+                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                <i class="fas fa-map-marker-alt fa-stack-1x"></i>
+            </span>---><!--CAN'T GET THE RIGHT SIDE TO CONFORM TO PLACEHOLDER FIELD-->
+            <input type="text" class="form-field"  
+                placeholder="City, Country"> 
             <button type="submit" class="search-button">Search</button>
-        </form><!--NEED TO REMOVE RIGHT AND LEFT BORDERS OF FORM FIELD AND ADD BORDER AROUND MAP MARKER ICON-->
     
         <br>
     
-        <div class="filter-bar">
-                <p>Filter                
-                <i class="fas fa-money-bill-wave"> Low Cost</i>
-                <i class="fas fa-child"> Family-friendly</i>
-                <i class="fas fa-heart"> Romantic</i>
-                <i class="fas fa-dog"> Pet allowed</i>
+        <div class="filters">
+                <p><b>Filters</b>                
+                <span class="fa-stack fa-1.75x">
+                    <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                    <i class="fas fa-money-bill-wave fa-stack-1x" style="color:#0065FC;"></i>
+                </span>
+                <b> Low cost</b>
+                <span class="fa-stack fa-1.75x">
+                    <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                    <i class="fas fa-child fa-stack-1x" style="color:#0065FC;"></i>
+                </span>
+                <b> Family-friendly</b>
+                <span class="fa-stack fa-1.75x">
+                    <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                    <i class="fas fa-heart fa-stack-1x" style="color:#0065FC;"></i>
+                </span>
+                <b> Romantic</b>
+                <span class="fa-stack fa-1.75x">
+                    <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                    <i class="fas fa-dog fa-stack-1x" style="color:#0065FC;"></i>
+                </span>
+                <b> Pets allowed</b>
                 </p>
         </div>
       
         <br>
         
-        <h5><i class="fas fa-info"></i> More than 500 accomodations are available in this city </h5>
-    
+        <p style="font-size: 12pt;">
+            <span class="fa-stack fa-1.75x">
+                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                <i class="fas fa-info fa-stack 1x" style="background-color: white; border-width: 3px; border-color:rgb(109, 30, 30);"></i>
+            </span><!--ICON BORDER NOT APPLYING-->
+            More than 500 accomodations are available in this city
+        </p>
     
         <div class="container">
             <div class="accommodations">
                 <h4>Accommodation in Marseille</h4>
-                <div id="atwo">
-                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere">
+                <div class="accthumbs">
+                    <figure>
+                        <img src="../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere">
+                        <figcaption><b>Auberge la Cannebiere</b><p>Night starting at <b>$25</b></p><p>insert star icons</p></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
+                        <figcaption><b>Hotel du port</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel">
+                        <figcaption><b>Les mouettes Hotel</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer">
+                        <figcaption><b>Hotel de la Mer</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+                        <figcaption><b>Auberge Le Panier</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel Chez Amina">
+                        <figcaption><b>Hotel Chez Amina</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                    </figure>
                 </div>
 
-                <div id="athree">
-                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
-                </div>
-
-                <div id="afour">
-                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel">
-                </div>
-
-                <div id="afive">
-                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer">
-                </div>
-
-                <div id="asix">
-                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
-                </div>
-
-                <div id="aseven">
-                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel Chez Amina">
-                </div>
-
-                br>
+                <br>
 
                 <p><a href=".index.html"> Show more</a></p>
             </div>
     
             <div class="mostpopular">
-                <h4>Most Popular <i class="fas fa-chart-line"></i></h4>
-                <div id="btwo">
-                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel">
-                </div>
-            
-                <div id="bthree">
-                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au couer de l'eau Bed and Breakfast">
-                </div>
+                <h4>Most Popular            <i class="fas fa-chart-line"></i></h4>
+                <div class="popthumbs">
+                    <figure>
+                        <img src="../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel">
+                        <figcaption><b>Morning Sun Hotel</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au couer de l'eau Bed and Breakfast">
+                        <figcaption><b>Au couer de l'eau Bed and Breakfast</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                    </figure>
 
-                <div id="bfour">
-                    <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Tout bleu et Blanc Hotel">
+                    <figure>
+                        <img src="../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout bleu et Blanc Hotel">
+                        <figcaption><b>Tout bleu et Blanc Hotel</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                    </figure>
+
                 </div>
 
             </div>
@@ -321,25 +320,117 @@
 
         <div class="activities">
             <h4>Activities in Marseille</h4>
-            <div id="csix">
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la=Garde">
-            </div>
-            <div id="cfour">
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island">
-            </div>
-            <div id="cfive">
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park">
-            </div>
-            <div id="cseven">
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park">
+            <div class="actthumbs">
+                <figure>
+                    <img src="../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port">
+                    <figcaption><b>Old Port</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort">
+                    <figcaption><b>Pomegues Fort</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island">
+                    <figcaption><b>Frioul Island</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park">
+                    <figcaption><b>Calenques National Park</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la=Garde">
+                    <figcaption><b>Notre Dame de la Garde</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park">
+                    <figcaption><b>Longchamp Park</b><p>Night starting at <b>$xx</b></p><p>insert star icons</p></figcaption>
+                </figure>
             </div> 
-            <div id="cthree">
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort">
+
+
+        </div>
+
+
+
+
+
+        <!--<div class="container">
+            <div class="accommodations">
+                <h4>Accommodation in Marseille</h4>
+                <div class="accthumbs">
+                    <img src="../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere">
+                </div>
+
+                <div class="accthumbs">
+                    <img src="../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
+                </div>
+
+                <div class="accthumbs">
+                    <img src="../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel">
+                </div>
+
+                <div class="accthumbs">
+                    <img src="../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer">
+                </div>
+
+                <div class="accthumbs">
+                    <img src="../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+                </div>
+
+                <div class="accthumbs">
+                    <img src="../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel Chez Amina">
+                </div>
+
+                <br>
+
+                <p><a href=".index.html"> Show more</a></p>
             </div>
-            <div id="ctwo">
-                <img src="C:\Users\asus13\Desktop\gitprojects\NgocLam_01062021\images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port">
+    
+            <div class="mostpopular">
+                <h4>Most Popular            <i class="fas fa-chart-line"></i></h4>
+                <div class="popthumbs">
+                    <img src="../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel">
+                </div>
+            
+                <div class="popthumbs">
+                    <img src="../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au couer de l'eau Bed and Breakfast">
+                </div>
+
+                <div class="popthumbs">
+                    <img src="../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout bleu et Blanc Hotel">
+                </div>
+
             </div>
         </div>
+
+        <div class="activities">
+            <h4>Activities in Marseille</h4>
+            <div class="actthumbs">
+                <img src="../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port">
+            </div>
+            <div class="actthumbs">
+                <img src="../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort">
+            </div>
+            <div class="actthumbs">
+                <img src="../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island">
+            </div>
+            <div class="actthumbs">
+                <img src="../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park">
+            </div>
+            <div class="actthumbs">
+                <img src="../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la=Garde">
+            </div>
+            <div class="actthumbs">
+                <img src="../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park">
+            </div> 
+
+
+        </div>-->
 
     </div>
 </body>
@@ -347,23 +438,26 @@
 
 
 <footer>
-    <p>About</p>
+    <div class="footer">
+ 
     <ul style= "list-style: none;">
-        <li><a href="<!--Insert Link-->">Site Map</a></li>
-        <li><a href="<!--Insert Link-->">General Terms and Conditions</a></li>
-        <li><a href="<!---Insert Link-->">Data and Privacy</a></li>
+        <li><b>About</b></li>
+        <li><a href="index.html">Site Map</a></li>
+        <li><a href="index.html">General Terms and Conditions</a></li>
+        <li><a href="index.html">Data and Privacy</a></li>
+    </ul>
+   
+    <ul style= "list-style: none;">
+        <li><b>Our Accommodations</b></li>
+        <li><a href="index.html">Quality Assessment</a></li>
+        <li><a href="index.html">You have a hotel</a></li>
     </ul>
 
-    <p>Our Accommodations</p>
     <ul style= "list-style: none;">
-        <li><a href="<!--Insert Link-->">Quality Assessment</a></li>
-        <li><a href="<!--Insert Link-->">You have a hotel</a></li>
+        <li><b>Assistance</b></li>
+        <li><a href="index.html">Help Desk</a></li>
+        <li><a href="index.html">Contct Us</a></li>
     </ul>
-
-    <p>Assistance</p>
-    <ul style= "list-style: none;">
-        <li><a href="<!--Insert Link-->">Help Desk</a></li>
-        <li><a href="<!--Insert Link-->">Contct Us</a></li>
-    </ul>
+    </div>
 </footer>
 </html>

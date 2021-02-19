@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reservia</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/82aca8790a.js" crossorigin="anonymous"></script>
+        <meta name="Reservia" content="Find a place for your dream vacation">
+        <link rel="stylesheet" href="CSS/styles.css">
+
+        <style>
+            body {
+                font-family: raleway, sans-serif;
+                margin: 0, auto;
+                padding: 10px;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+            }
+
+            .navbar {
+                padding: 20px 30px;
+            }
+
+            .navbar:hover {
+            color:black;
+            background-color:#f2f2f2
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 10px 40px;
+            }
+
+            li {
+                display: inline-block;
+                margin: 20px;
+            }
+
+            .topsplit {
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                margin: 20px auto;
+                background: #f2f2f2;
+            }
+            .topsplit div {
+                display: inline-block;
+                flex-direction: row;
+                margin: 10px;
+                padding: 20px
+            }
+
+            footer {
+                display: flex;
+                margin: 20px auto;
+                background: #f2f2f2;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <a href="index.html" class="reservialogo">
+                    <img src="../images/logo/Reservia@3x.png"
+                    title="Reservia Logo" alt="blue Reservia Logo" style="max-height:50px; align-items: stretch;">
+                </a>
+                <div>
+                    <ul>
+                        <li><a href="accommodations.html" class="navbar"><strong>Accommodations</strong></a></li>
+                        <li><a href="activities.html" class="navbar"><strong>Activities</strong></a></li>
+                        <li><a href="signup.html" class="navbar"><strong>Sign Up</strong></a></li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <search>
+                <h4>Find a place for your dream vacation</h4>
+                <h6>Downtown or in nature</h6>
+
+            </search>
+        </header>
+
+        <section class="topsplit">
+            <div>Accommodations</div>
+
+            <div>Most Popular</div>
+
+        </section>
+
+        <section class="bottom">Activities</section>
+
+        <footer>
+            <ul><strong>About</strong>
+                <li>Site Map</li>
+                <li>General Terms and Conditions</li>
+                <li>Data and Privacy</li>
+            </ul>
+
+            <ul><strong>Our Accommodations</strong>
+                <li>Quality Assessment</li>
+                <li>You have a hotel?</li>
+            </ul>
+
+            <ul><strong>Assistance</strong>
+                <li>Help Desk</li>
+                <li>Contact Us</li>
+            </ul>
+        </footer>
+    </body>
+</html>
