@@ -64,6 +64,7 @@ body {
     margin-right: 0.3rem;
     border-top: 0.2rem solid #0065fc;
     border-bottom: 0.2rem solid #0065fc;
+    align-content: center;
 }
 
 .hamburger:before {
@@ -73,6 +74,7 @@ body {
     left: 0px;
     width: 100%;
     border-top: 0.2rem solid #0065fc;
+    align-content: center;
 }
 
 .dropdown-menu{
@@ -101,6 +103,7 @@ body {
 
 .hamburger-icon:hover .dropdown-menu{
         display: block;
+        align-content: center;
 }
 
 @media (max-width: 677px) {
@@ -322,6 +325,7 @@ button:hover {
         flex-direction: column;
         flex-wrap: wrap;   
         align-items: center;
+        height: fit-content;
     }
 
     .card1 { 
@@ -330,9 +334,8 @@ button:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         overflow: hidden;
         display: flex;
-        flex-direction: row;
-        width: 95%;
-        height: 25%;
+        flex-direction: column;
+        width: 100%;
         padding: 0.3rem;
         margin: 1rem 0.5rem;
         text-decoration: none;
@@ -340,8 +343,8 @@ button:hover {
 
     .card1image {
         object-fit: cover;
-        width: 40%;
-        border-radius: 1rem 0 0 1rem;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
     }
 }
 
@@ -425,16 +428,16 @@ button:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 20%;
-
+    height: 100%;
 }
 
 .card3tall {
-    background-color: white;
     border-radius: 1rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     width: 20%;
+    height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -477,14 +480,7 @@ button:hover {
     }
 
     .main-bottomcards {
-        height: 25%;
-    }
-    
-    .bottomshort {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;   
-        align-items: center;
+        height: 100%;
         width: 100%;
     }
 
@@ -494,16 +490,28 @@ button:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         overflow: hidden;
         display: flex;
-        flex-direction: row;
-        width: 95%;
+        flex-direction: column;
+        width: 100%;
+        height: 175px;
         margin: 1rem 0.5rem;
         text-decoration: none;
+        justify-content: space-between;
+    }
+    
+    .bottomshort {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;   
+        align-items: center;
+        width: 100%;
+        height: 50%;
     }
 
     .card3tallimage {
         object-fit: cover;
-        width: 75%;
-        border-radius: 1rem 0 0 1rem;
+        width: 100%;
+        height: 75%;
+        border-radius: 1rem 1rem 0 0;
     }
 
     .card3short { 
@@ -512,17 +520,17 @@ button:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         overflow: hidden;
         display: flex;
-        flex-direction: row;
-        width: 95%;
-        height: 25%;
+        flex-direction: column;
+        width: 100%;
         margin: 1rem 0.5rem;
         text-decoration: none;
     }
 
     .card3shortimage {
         object-fit: cover;
-        width: 75%;
-        border-radius: 1rem 0 0 1rem;
+        width: 100%;
+        height: 75%;
+        border-radius: 1rem 1rem 0 0;
     }
 }
 
@@ -561,4 +569,13 @@ button:hover {
 li:hover {
     background-color: white;
     max-width: fit-content;
+}
+
+@media (max-width: 688px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footercolumns {
+        width: 100%;
+    }
 }
