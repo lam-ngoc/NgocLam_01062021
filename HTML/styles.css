@@ -515,7 +515,7 @@ button:hover {
 }
 
 .card3tallcontent h4 {
-    margin-block-start: 0.75rem;
+    margin: 0.75rem;
 }
 
 .card3short {
@@ -635,7 +635,7 @@ button:hover {
 /*=========FOOTER============*/
 .footer {
     background-color: #f2f2f2;
-    margin: 0 auto;
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -672,6 +672,7 @@ li:hover {
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
+        margin-top: 1rem;
     }
     .footercolumns {
         width: 100%;
